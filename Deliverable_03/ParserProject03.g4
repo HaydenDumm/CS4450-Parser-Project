@@ -121,8 +121,9 @@ IDENT
 
 // --- Separators & Whitespace ---
 BLOCK_COMMENT
-    : '\'\'\'' .*? '\'\'\'' -> skip
+    : '\'\'\'' ( . | '\r' | '\n' )*? '\'\'\'' -> skip
     ;
+
 
 LINE_COMMENT
     : '#' ~[\r\n]* -> skip

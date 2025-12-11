@@ -1,4 +1,4 @@
-# Generated from Deliverable_03/ParserProject03.g4 by ANTLR 4.13.2
+# Generated from ParserProject03.g4 by ANTLR 4.13.2
 from antlr4 import *
 if "." in __name__:
     from .ParserProject03Parser import ParserProject03Parser

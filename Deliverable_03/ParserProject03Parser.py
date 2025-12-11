@@ -1,4 +1,4 @@
-# Generated from Deliverable_03/ParserProject03.g4 by ANTLR 4.13.2
+# Generated from ParserProject03.g4 by ANTLR 4.13.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -213,6 +213,12 @@ class ParserProject03Parser ( Parser ):
             if hasattr( listener, "exitProg" ):
                 listener.exitProg(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitProg" ):
+                return visitor.visitProg(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -323,6 +329,12 @@ class ParserProject03Parser ( Parser ):
             if hasattr( listener, "exitAugAssignStmt" ):
                 listener.exitAugAssignStmt(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAugAssignStmt" ):
+                return visitor.visitAugAssignStmt(self)
+            else:
+                return visitor.visitChildren(self)
+
 
     class WhileStmtContext(StmtContext):
 
@@ -341,6 +353,12 @@ class ParserProject03Parser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitWhileStmt" ):
                 listener.exitWhileStmt(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitWhileStmt" ):
+                return visitor.visitWhileStmt(self)
+            else:
+                return visitor.visitChildren(self)
 
 
     class AssignStmtContext(StmtContext):
@@ -361,6 +379,12 @@ class ParserProject03Parser ( Parser ):
             if hasattr( listener, "exitAssignStmt" ):
                 listener.exitAssignStmt(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAssignStmt" ):
+                return visitor.visitAssignStmt(self)
+            else:
+                return visitor.visitChildren(self)
+
 
     class ForStmtContext(StmtContext):
 
@@ -380,6 +404,12 @@ class ParserProject03Parser ( Parser ):
             if hasattr( listener, "exitForStmt" ):
                 listener.exitForStmt(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitForStmt" ):
+                return visitor.visitForStmt(self)
+            else:
+                return visitor.visitChildren(self)
+
 
     class IfLogicStmtContext(StmtContext):
 
@@ -398,6 +428,12 @@ class ParserProject03Parser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitIfLogicStmt" ):
                 listener.exitIfLogicStmt(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitIfLogicStmt" ):
+                return visitor.visitIfLogicStmt(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -484,6 +520,12 @@ class ParserProject03Parser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitBlock" ):
                 listener.exitBlock(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitBlock" ):
+                return visitor.visitBlock(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -590,6 +632,12 @@ class ParserProject03Parser ( Parser ):
             if hasattr( listener, "exitIf_stmt" ):
                 listener.exitIf_stmt(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitIf_stmt" ):
+                return visitor.visitIf_stmt(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -683,6 +731,12 @@ class ParserProject03Parser ( Parser ):
             if hasattr( listener, "exitWhile_stmt" ):
                 listener.exitWhile_stmt(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitWhile_stmt" ):
+                return visitor.visitWhile_stmt(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -749,6 +803,12 @@ class ParserProject03Parser ( Parser ):
             if hasattr( listener, "exitFor_stmt" ):
                 listener.exitFor_stmt(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFor_stmt" ):
+                return visitor.visitFor_stmt(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -806,6 +866,12 @@ class ParserProject03Parser ( Parser ):
             if hasattr( listener, "exitSimpleAssign" ):
                 listener.exitSimpleAssign(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitSimpleAssign" ):
+                return visitor.visitSimpleAssign(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -859,6 +925,12 @@ class ParserProject03Parser ( Parser ):
             if hasattr( listener, "exitAugAssign" ):
                 listener.exitAugAssign(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAugAssign" ):
+                return visitor.visitAugAssign(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -901,6 +973,12 @@ class ParserProject03Parser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitAugOp" ):
                 listener.exitAugOp(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAugOp" ):
+                return visitor.visitAugOp(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -965,6 +1043,12 @@ class ParserProject03Parser ( Parser ):
             if hasattr( listener, "exitMulDivMod" ):
                 listener.exitMulDivMod(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitMulDivMod" ):
+                return visitor.visitMulDivMod(self)
+            else:
+                return visitor.visitChildren(self)
+
 
     class AddSubContext(ExprContext):
 
@@ -987,6 +1071,12 @@ class ParserProject03Parser ( Parser ):
             if hasattr( listener, "exitAddSub" ):
                 listener.exitAddSub(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAddSub" ):
+                return visitor.visitAddSub(self)
+            else:
+                return visitor.visitChildren(self)
+
 
     class ComparisonContext(ExprContext):
 
@@ -1008,6 +1098,12 @@ class ParserProject03Parser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitComparison" ):
                 listener.exitComparison(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitComparison" ):
+                return visitor.visitComparison(self)
+            else:
+                return visitor.visitChildren(self)
 
 
     class AndLogicContext(ExprContext):
@@ -1033,6 +1129,12 @@ class ParserProject03Parser ( Parser ):
             if hasattr( listener, "exitAndLogic" ):
                 listener.exitAndLogic(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAndLogic" ):
+                return visitor.visitAndLogic(self)
+            else:
+                return visitor.visitChildren(self)
+
 
     class UnaryPlusContext(ExprContext):
 
@@ -1052,6 +1154,12 @@ class ParserProject03Parser ( Parser ):
             if hasattr( listener, "exitUnaryPlus" ):
                 listener.exitUnaryPlus(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitUnaryPlus" ):
+                return visitor.visitUnaryPlus(self)
+            else:
+                return visitor.visitChildren(self)
+
 
     class UnaryMinusContext(ExprContext):
 
@@ -1070,6 +1178,12 @@ class ParserProject03Parser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitUnaryMinus" ):
                 listener.exitUnaryMinus(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitUnaryMinus" ):
+                return visitor.visitUnaryMinus(self)
+            else:
+                return visitor.visitChildren(self)
 
 
     class OrLogicContext(ExprContext):
@@ -1095,6 +1209,12 @@ class ParserProject03Parser ( Parser ):
             if hasattr( listener, "exitOrLogic" ):
                 listener.exitOrLogic(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitOrLogic" ):
+                return visitor.visitOrLogic(self)
+            else:
+                return visitor.visitChildren(self)
+
 
     class AtomContext(ExprContext):
 
@@ -1113,6 +1233,12 @@ class ParserProject03Parser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitAtom" ):
                 listener.exitAtom(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAtom" ):
+                return visitor.visitAtom(self)
+            else:
+                return visitor.visitChildren(self)
 
 
     class NotLogicContext(ExprContext):
@@ -1134,6 +1260,12 @@ class ParserProject03Parser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitNotLogic" ):
                 listener.exitNotLogic(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitNotLogic" ):
+                return visitor.visitNotLogic(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -1330,6 +1462,12 @@ class ParserProject03Parser ( Parser ):
             if hasattr( listener, "exitPrimary" ):
                 listener.exitPrimary(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPrimary" ):
+                return visitor.visitPrimary(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -1435,6 +1573,12 @@ class ParserProject03Parser ( Parser ):
             if hasattr( listener, "exitListLiteral" ):
                 listener.exitListLiteral(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitListLiteral" ):
+                return visitor.visitListLiteral(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -1506,6 +1650,12 @@ class ParserProject03Parser ( Parser ):
             if hasattr( listener, "exitLiteral" ):
                 listener.exitLiteral(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitLiteral" ):
+                return visitor.visitLiteral(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -1567,6 +1717,12 @@ class ParserProject03Parser ( Parser ):
         def exitRule(self, listener:ParseTreeListener):
             if hasattr( listener, "exitBoolean_val" ):
                 listener.exitBoolean_val(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitBoolean_val" ):
+                return visitor.visitBoolean_val(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
