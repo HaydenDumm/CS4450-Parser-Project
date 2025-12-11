@@ -1,5 +1,7 @@
 # CS4450-Parser-Project
 
+GitHub Link: https://github.com/HaydenDumm/CS4450-Parser-Project.git
+
 Project Description:
     This project implements a simplified Python 3 parser using ANTLR to recognize important aspects of the langauge.
     The grammar supports arithmetic expressions, assignments, conditionals, loops, nested structures, and comments, generating a complete parse tree for any valid input program.
