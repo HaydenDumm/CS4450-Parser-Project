@@ -3,7 +3,7 @@ from ParserProject02Lexer import ParserProject02Lexer
 from ParserProject02Parser import ParserProject02Parser
 
 def main():
-    stream = FileStream("project_deliverable_2.py", encoding="utf-8")
+    stream = FileStream("Deliverable_02/project_deliverable_2.py", encoding="utf-8")
     lexer = ParserProject02Lexer(stream)
     tokens = CommonTokenStream(lexer)
     parser = ParserProject02Parser(tokens)
