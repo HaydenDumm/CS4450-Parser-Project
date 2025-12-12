@@ -21,4 +21,5 @@ How to Use:
 
 Demo Link:
     https://youtu.be/xrVjKb6uSqc
-    
+    I changed the tree in the video to have a white background so its visible.
+    Also would like to add that you can run the programs with python3 in a terminal if you do not have vscode.
